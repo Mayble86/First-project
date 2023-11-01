@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css ">
+    <title>Сайт верстальщика</title>
+</head>
+<body>
+    <header>
+        <h1>Личный сайт верстальщика</h1>
+        <img src="img/hive.svg" alt="логотип сайта" width="50px">
+        <nav>
+            <ul>
+                <li><a href="index.html">На главную</a></li>
+            </ul>
+            <ul>
+                <li><a href="#Flexbox">Flexbox</a></li>
+                <li><a href="#Grid">Grid</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Flexbox">
+            <h2>Немного о Flexbox и Grid</h2>
+        </section>
+        <section>
+            <h3>Flexbox</h3>
+            <p>
+                <a target="_blank" href="https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a> - это способ позиционирования элементов в CSS. С помощью этой функции можно быстро и легко описывать, как будет располагаться тот или иной блок на веб-странице. Элементы выстраиваются по заданной оси и автоматически распределяются согласно настройкам.
+            </p>
+            <img src="img/flexbox.png" width="500">
+            <p>
+                В верстке есть такое понятие, как сетка, или лэйаут &lt;layout&gt;. Это то, как блоки — крупные и мелкие — расположены на странице. Списки, наборы ссылок, виджеты и статьи — все это распределено по веб-странице не хаотично, а по определенной структуре. Эта структура и есть сетка. Flex — один из способов ее задать.
+            </p>
+            <p>
+                Flexbox появился в CSS 3.0. До него для построения сеток использовали таблицы и float’ы — команды для смещения элементов в сторону. Это было неудобно, трудоемко и сильно ограничивало возможности верстки. Благодаря Flexbox верстать стало удобнее и легче, появилась возможность реализовать более интересные дизайнерские идеи.
+            </p>
+            <p>
+                Flexbox расшифровывается как Flexible Box — гибкий ящик или блок. Гибкость — основная идея этого способа. Читается как «флексбокс» или просто «флекс».
+            </p>
+        </section>
+        <h4>Grid</h4>
+            <section id="Grid">
+                <p>
+                <a target="_blank" href="https://doka.guide/css/grid-guide/">Grid</a> - это удобная технология для раскладки элементов на веб-страницах. В отличие от флексбоксов, одновременно работающих только с одним измерением, гриды дают возможность работать одновременно с двумя: горизонталью и вертикалью.
+                </p>
+                <img src="img/CSS-GRID-3.png" width="500">
+                <p>
+                    На заре веба для создания раскладки поинтереснее одноколоночной часто использовались таблицы. Но проблема была в том, что таблицы были сделаны не для этого. Даже если отбросить семантическую нагруженность этого элемента, отдельные свойства для стилизации были крайне неудобными. По сути, это был костыль за неимением более удобных способов. Гриды же изначально были придуманы и реализованы как инструмент для создания раскладки.
+                </p>
+                <p>
+                    Принцип работы гридов чем-то похож на таблицы. Вместо работы только с рядами или только с колонками с помощью гридов можно работать с так называемыми грид-ячейками, позиционируя элементы по вертикали и горизонтали одновременно.
+                </p>
+            </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; Фокин О.А., 2023</p>
+        <p>Вы также можете найти меня <a target="_blank" href="https://midis.ru/midis-obrazovanie-s-trudoustroystvom/it-tekhnologii/razrabotka-kompyuternykh-igr-i-prilozheniy-virtualnoy-i-dopolnennoy-realnosti-vr-ar/">здесь</a></p>
+        <a target="_blank" href="https://vk.com/"><img src="img/vk.svg" width="25"></a>
+        <a target="_blank" href="https://midis.ru/"><img src="img/midis.svg" width="25"></a>
+        <a target="_blank" href="https://discord.com/"><img src="img/discord.svg" width="25"></a>
+        <a target="_blank" href="https://ya.ru/"><img src="img/yandex.svg" width="12"></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 1.1em;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+header {
+    background-color: darkgray;
+    text-align: center;
+}
+main {
+    background-color: rgb(141, 135, 177);
+    border: 5px solid rgb(75, 75, 75);
+}
+footer {
+    background-color: darkgray;
+    padding: 10px 50px;
+}
+#about {
+    background-color: rgb(100, 100, 100);
+    padding: 10px 50px;
+    text-align: center;
+}
+#articles {
+    background-color: rgb(147, 229, 229);
+    padding: 10px 50px;
+}
+#content
+{
+    padding: 10px 50px;
+}
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+h1 {
+    text-transform: capitalize;
+    color: rgb(147, 229, 229);
+    font-size: 2rem;
+    font-style: italic;
+}
+h2 {
+    font-size: 1.5rem;
+    text-decoration: overline;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+
+img {
+display: block;
+margin: 0 auto;
+}
+/*на паре*/
+a {
+    color:rgb(85, 42, 42);
+    text-decoration: none;
+}
+a:active {
+    color: blueviolet;
+}
+a:visited {
+    color:rgb(0, 22, 83)
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+a:focus {
+    color: yellow;
+}
+p:lang(ru) {
+    font-style: italic;
+}
+p:lang(en) {
+    text-decoration: underline;
+}
+
+ol li:nth-child(2n) {
+    background-color: rgb(100, 100, 100);
+    line-height: 40px;
+}
+/*Про обо мне*/
+#about h2::after {
+    content:" new!"; 
+    color: red;
+    font-size: 12px;
+    margin-left: 15px; /*отступ слева*/
+}
+/*аватар*/
+#about img {
+    border-radius: 50%;
+}
+
+#articles li:nth-child(4)::after { 
+    content: "важно!!!";
+    color: tomato;
+    font-size: 15px;
+    margin-left: 20px;
+    background: blanchedalmond;
+    border-radius: 30%;
+    border-style: double;
+    border-color: brown;
+}
+p::first-line {
+    letter-spacing: 3px;
+    /*line-height: 50px;*/
+}
+#about p {
+    background-color: whitesmoke;
+}
+footer img {
+    border-radius: 50%;
+    border-style: groove;
+    border-color: cadetblue;
+}
+
+img+p {
+    margin-top: 50px;
+}
+
+/*tablici*/
+.check-table {
+    border: solid 5px rgb(33, 16, 185);
+    border-collapse: collapse;
+}
+.check-table td,
+.check-table th {
+    padding: 5px 10px;
+    border: solid 1px black; /*bottom/top*/
+}
+.check-table tr:nth-child(odd) /*eve*/ {
+    font-weight: bold;
+    color: rgb(8, 16, 90);
+}
+.check-table td:last-child,
+.check-table th:last-child {
+    background-color: rgb(148, 32, 42);
+    text-align: center;
+}
+
+#contact-form input[type = "text"] {
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: rgb(89, 0, 253) solid 1px;
+    background-color: #eddfff;
+}
+
+#contact-form input[type="submit"] {
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: rgb(44, 2, 83) solid 1px;
+    background-color: #8223ff;
+}
+#contact-form input[type="submit"]:hover {
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: rgb(44, 2, 83) solid 1px;
+    background-color: whitesmoke;
+}
