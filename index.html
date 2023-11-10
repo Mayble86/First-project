@@ -7,10 +7,33 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://mayble86.github.io/First-project/img/favicon.ico" rel="stylesheet">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="img/favicon.ico">
+<link rel="icon" type="image/ico" sizes="16x16" href="img/favicon.ico">
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<meta property="og:title" content="Сайт верстальщика">
+<meta property="og:site_name" content="Сайт верстальщика">
+<meta property="og:url" content="https://mayble86.github.io/First-project/">
+<meta property="og:description" content="Обо мне">
+<meta property="og:image" content="https://mayble86.github.io/First-project/img/favicon.ico">
+
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#5900fd" />
+
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#5900fd" />
+
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#5900fd" />
+
+<!-- Яндекс.Браузер -->
+<meta name="viewport" content="ya-title=#5900fd,ya-dock=fade" />
 
     <link rel="stylesheet" href="css/style.css ">
-    <title>Сайт верстальщика</title>
+    <title>Сайт верстальщика / Главная</title>
 </head>
 <body>
     <header>
@@ -46,7 +69,7 @@
 
             <div class="contact-form">
                 <label for="theme">Услуги</label><br>
-                <select name="theme" id="theme">
+                <select name="theme" type="theme" id="theme">
                     <option value="1">Заказать услугу</option>
                     <option value="2">Оставить отзыв/замечание</option>
                     <option value="3">Предложить сотрудничество</option>
@@ -62,6 +85,9 @@
 
                 <label for="connect">Текст сообщения</label><br>
                 <textarea id="connect" type="text" rows="3" required></textarea><br>
+
+                <label for="phone">Номер телефона</label><br>
+                <input id="phone" type="text" placeholder="+7-(9**)-***-**-**" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required><br>
 
                 <label>
                     <input id="checkbox" type="checkbox" value="checkbox" checked required>
